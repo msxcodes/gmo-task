@@ -70,10 +70,7 @@ const DepartmentList = () => {
             <input
               type="checkbox"
               checked={department.selected}
-              onChange={() => {
-                toggleDepartment(departmentIndex);
-                toggleSubDepartmentList(departmentIndex);
-              }}
+              onChange={() => toggleDepartment(departmentIndex)}
             />
             <span style={{ marginLeft: "5px", fontSize: "18px" }}>
               {department.name}
